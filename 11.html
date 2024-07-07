@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="your-logo.png" alt="Logo" class="h-10 w-10 mr-3">
+            <span class="text-xl font-bold">Your Company</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#" class="text-gray-800 hover:text-blue-500">Courses</a>
+            <a href="#" class="text-gray-800 hover:text-blue-500">Blogs</a>
+            <a href="#" class="text-gray-800 hover:text-blue-500">Contact Us</a>
+        </div>
+        <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+                <svg class="w-6 h-6 text-gray-800" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+<!-- Mobile Menu -->
+<div class="hidden mobile-menu">
+    <ul>
+        <li class="active"><a href="#" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Courses</a></li>
+        <li><a href="#" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Blogs</a></li>
+        <li><a href="#" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Contact Us</a></li>
+    </ul>
+</div>
+
+<!-- Hero Section -->
+<section class="bg-white py-12">
+    <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2">
+            <h2 class="text-3xl font-bold mb-6">Welcome to Our Platform</h2>
+            <p class="mb-6">Join us to explore the best courses available. Learn new skills and advance your career.</p>
+        </div>
+        <div class="lg:w-1/2">
+            <video class="w-full h-auto" controls>
+                <source src="your-video-source.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+<!-- Top Courses Section -->
+<section class="py-12">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">Top Courses</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="course-image-1.jpg" alt="Course 1">
+                <h3 class="text-xl font-semibold mb-2">Course Title 1</h3>
+                <p class="mb-4">Brief description of the course.</p>
+                <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="course-image-2.jpg" alt="Course 2">
+                <h3 class="text-xl font-semibold mb-2">Course Title 2</h3>
+                <p class="mb-4">Brief description of the course.</p>
+                <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="course-image-3.jpg" alt="Course 3">
+                <h3 class="text-xl font-semibold mb-2">Course Title 3</h3>
+                <p class="mb-4">Brief description of the course.</p>
+                <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="course-image-4.jpg" alt="Course 4">
+                <h3 class="text-xl font-semibold mb-2">Course Title 4</h3>
+                <p class="mb-4">Brief description of the course.</p>
+                <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Two Tables Section -->
+<section class="py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Table 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">CCIE Holders</h3>
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                        <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">CCIE Number</th>
+                        <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">CCIE Track</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">John Doe</td>
+                        <td class="px-6 py-4 whitespace-nowrap">12345</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Routing & Switching</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">Jane Smith</td>
+                        <td class="px-6 py-4 whitespace-nowrap">67890</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Security</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">Michael Brown</td>
+                        <td class="px-6 py-4 whitespace-nowrap">11223</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Collaboration</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Table 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold mb-4">Table 2</h3>
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead>
+                    <tr>
+                        <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Column 1</th>
+                        <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Column 2</th>
+                        <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Column 3</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">Data 1</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Data 2</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Data 3</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">Data 4</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Data 5</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Data 6</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">Data 7</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Data 8</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Data 9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">Meet Our Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <img class="h-32 w-32 rounded-full mx-auto mb-4" src="team-member-1.jpg" alt="Team Member 1">
+                <h3 class="text-xl font-semibold mb-2">Alice Johnson</h3>
+                <p class="text-gray-600">CEO</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <img class="h-32 w-32 rounded-full mx-auto mb-4" src="team-member-2.jpg" alt="Team Member 2">
+                <h3 class="text-xl font-semibold mb-2">Bob Smith</h3>
+                <p class="text-gray-600">CTO</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <img class="h-32 w-32 rounded-full mx-auto mb-4" src="team-member-3.jpg" alt="Team Member 3">
+                <h3 class="text-xl font-semibold mb-2">Charlie Brown</h3>
+                <p class="text-gray-600">CFO</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <img class="h-32 w-32 rounded-full mx-auto mb-4" src="team-member-4.jpg" alt="Team Member 4">
+                <h3 class="text-xl font-semibold mb-2">Daisy Lee</h3>
+                <p class="text-gray-600">COO</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-12 bg-blue-500 text-white">
+    <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-6 lg:mb-0">
+            <h2 class="text-3xl font-bold mb-4">Join Us Today</h2>
+            <p class="mb-4">Sign up to receive the latest updates and offers.</p>
+        </div>
+        <div class="lg:w-1/2">
+            <form class="bg-white p-6 rounded-lg shadow-lg text-gray-800">
+                <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="name">Name</label>
+                    <input class="w-full px-3 py-2 border rounded-lg" type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="email">Email</label>
+                    <input class="w-full px-3 py-2 border rounded-lg" type="email" id="email" placeholder="Your Email">
+                </div>
+                <button class="w-full bg-blue-500 text-white px-3 py-2 rounded-lg font-semibold hover:bg-blue-600" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">Latest Blogs</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Blog Post 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="blog-image-1.jpg" alt="Blog 1">
+                <h3 class="text-xl font-semibold mb-2">Blog Post Title 1</h3>
+                <p class="mb-4">A brief description of the blog post.</p>
+                <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+            <!-- Blog Post 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="blog-image-2.jpg" alt="Blog 2">
+                <h3 class="text-xl font-semibold mb-2">Blog Post Title 2</h3>
+                <p class="mb-4">A brief description of the blog post.</p>
+                <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+            <!-- Blog Post 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="blog-image-3.jpg" alt="Blog 3">
+                <h3 class="text-xl font-semibold mb-2">Blog Post Title 3</h3>
+                <p class="mb-4">A brief description of the blog post.</p>
+                <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+            <!-- Blog Post 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="blog-image-4.jpg" alt="Blog 4">
+                <h3 class="text-xl font-semibold mb-2">Blog Post Title 4</h3>
+                <p class="mb-4">A brief description of the blog post.</p>
+                <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+            <!-- Blog Post 5 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="blog-image-5.jpg" alt="Blog 5">
+                <h3 class="text-xl font-semibold mb-2">Blog Post Title 5</h3>
+                <p class="mb-4">A brief description of the blog post.</p>
+                <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+            <!-- Blog Post 6 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="blog-image-6.jpg" alt="Blog 6">
+                <h3 class="text-xl font-semibold mb-2">Blog Post Title 6</h3>
+                <p class="mb-4">A brief description of the blog post.</p>
+                <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+            <!-- Blog Post 7 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="blog-image-7.jpg" alt="Blog 7">
+                <h3 class="text-xl font-semibold mb-2">Blog Post Title 7</h3>
+                <p class="mb-4">A brief description of the blog post.</p>
+                <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+            <!-- Blog Post 8 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img class="h-48 w-full object-cover mb-4" src="blog-image-8.jpg" alt="Blog 8">
+                <h3 class="text-xl font-semibold mb-2">Blog Post Title 8</h3>
+                <p class="mb-4">A brief description of the blog post.</p>
+                <a href="#" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+
+</body>
+</html>
