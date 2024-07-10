@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion-like Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .content ul, .content ol {
+            padding-left: 20px;
+        }
+        .content ul li, .content ol li {
+            margin-bottom: 10px;
+        }
+        .content .table-container {
+            overflow-x: auto;
+        }
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .content table, .content th, .content td {
+            border: 1px solid #dee2e6;
+        }
+        .content th, .content td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/50" alt="Logo">
+            <h1>Notion-like Page</h1>
+        </div>
+        <div class="content">
+            <h2>Section Title</h2>
+            <p>We are creating 3 types of content as part of Marketing intaitive of NH. </p>
+            <ul>
+                <li>Technology- Youtube shorts</li>
+                <li>Quizs for LMS</li>
+                <li>Social Media content like short videos and quizes</li>
+            </ul>
+            <h2>Video types </h2>
+            <p>Following type of videos will be created</p>
+            <ol>
+                <li>Technical How how</li>
+                <li>Interview related</li>
+                <li>Career tips</li>
+            </ol>
+            <h2>Table Example</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                        </tr>
+                        <tr>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                            <td>Data 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
