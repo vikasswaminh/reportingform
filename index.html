@@ -3,106 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Report Form</title>
+    <title>NETWORKERS HOME - Principles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
         }
-        form {
-            max-width: 500px;
-            margin: auto;
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
+        h1 {
+            text-align: center;
+            color: #333;
+            font-weight: 700;
         }
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
-        input[type="submit"], button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
+        li {
+            background: #e2e2e2;
+            margin: 10px 0;
             padding: 15px;
-            font-size: 16px;
+            border-radius: 4px;
+            font-weight: 400;
+            transition: background 0.3s;
         }
-        input[type="submit"]:hover, button:hover {
-            background-color: #45a049;
-        }
-        button {
-            width: 100%;
-            margin-top: -10px;
-        }
-        @media (max-width: 600px) {
-            body {
-                margin: 10px;
-            }
-            form {
-                padding: 15px;
-            }
-            input, select {
-                padding: 8px;
-            }
-            input[type="submit"], button {
-                padding: 12px;
-                font-size: 14px;
-            }
+        li:hover {
+            background: #d4d4d4;
         }
     </style>
 </head>
 <body>
-
-    <h2>Daily Report Form</h2>
-    <form action="https://formspree.io/f/meojqalp" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="date">Date</label>
-        <input type="date" id="date" name="date" required>
-
-        <div id="link-fields">
-            <label for="activity_link">Activity Link</label>
-            <input type="url" id="activity_link" name="activity_link[]" required>
-        </div>
-
-        <button type="button" onclick="addLinkField()">Add Another Link</button>
-
-        <label for="activity_quality">Rate Your Today Activity Quality</label>
-        <select id="activity_quality" name="activity_quality" required>
-            <option value="">Select...</option>
-            <option value="Excellent">Excellent</option>
-            <option value="Good">Good</option>
-            <option value="Average">Average</option>
-            <option value="Poor">Poor</option>
-        </select>
-
-        <input type="hidden" name="_subject" value="New Daily Report Submission">
-
-        <input type="submit" value="Submit">
-    </form>
-
-    <script>
-        function addLinkField() {
-            var linkFields = document.getElementById('link-fields');
-            var newLinkField = document.createElement('div');
-            newLinkField.innerHTML = '<label for="activity_link">Activity Link</label><input type="url" name="activity_link[]" required>';
-            linkFields.appendChild(newLinkField);
-        }
-    </script>
-
+    <div class="container">
+        <h1>NETWORKERS HOME - Principles</h1>
+        <ul>
+            <li>Always prioritize our brand values above personal interests.</li>
+            <li>Perform every task with the utmost precision, ensuring high quality.</li>
+            <li>Stand out by providing high-value content, products, and services with unwavering integrity.</li>
+            <li>Approach each task with the aim of achieving perfection.</li>
+            <li>Take responsibility for your personal growth and job security.</li>
+            <li>Understand that excuses will not lead to success.</li>
+            <li>Focus on completing tasks at any cost, as hard work cannot be replaced by mere promises.</li>
+            <li>Develop a personal working system, such as keeping a task list visible on your desk.</li>
+            <li>Send reminders to yourself to ensure your work is completed without relying on external prompts.</li>
+            <li>Avoid relying on groups, as finding a job is ultimately your own responsibility.</li>
+            <li>Recognize that the job market will become increasingly competitive, making job retention crucial.</li>
+            <li>Eliminate unnecessary distractions to maintain clarity and focus.</li>
+        </ul>
+    </div>
 </body>
 </html>
