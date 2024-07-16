@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Report Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"], button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover, button:hover {
+            background-color: #45a049;
+        }
+        button {
+            width: 100%;
+            margin-top: -10px;
+        }
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            form {
+                padding: 15px;
+            }
+            input, select {
+                padding: 8px;
+            }
+            input[type="submit"], button {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Daily Report Form</h2>
+    <form action="https://formspree.io/f/meojqalp" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <div id="link-fields">
+            <label for="activity_link">Activity Link</label>
+            <input type="url" id="activity_link" name="activity_link[]" required>
+        </div>
+
+        <button type="button" onclick="addLinkField()">Add Another Link</button>
+
+        <label for="activity_quality">Rate Your Today Activity Quality</label>
+        <select id="activity_quality" name="activity_quality" required>
+            <option value="">Select...</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Poor">Poor</option>
+        </select>
+
+        <input type="hidden" name="_subject" value="New Daily Report Submission">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function addLinkField() {
+            var linkFields = document.getElementById('link-fields');
+            var newLinkField = document.createElement('div');
+            newLinkField.innerHTML = '<label for="activity_link">Activity Link</label><input type="url" name="activity_link[]" required>';
+            linkFields.appendChild(newLinkField);
+        }
+    </script>
+
+</body>
+</html>
