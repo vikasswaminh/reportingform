@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .container, .instructions {
+            width: 80%;
+            max-width: 800px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #ff6347;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .instructions {
+            padding: 20px;
+        }
+        .instructions h2 {
+            color: #ff6347;
+        }
+        .instructions ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .instructions ul li {
+            background: #f2f2f2;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Daily Food Plan</h1>
+        </div>
+        <table>
+            <tr>
+                <th>Meal</th>
+                <th>Items</th>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>Multigrain bread with Lauki ki Subji</td>
+            </tr>
+            <tr>
+                <td>Lunch (1st Meal)</td>
+                <td>Fruit bowl (Cherries, Pineapple, Watermelon, etc.)</td>
+            </tr>
+            <tr>
+                <td>Lunch (2nd Meal)</td>
+                <td>Simple Chana/Masoor Dal with Lauki and Multigrain bread</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>Salad (Cucumber) with Multigrain bread and Egg Bhurji</td>
+            </tr>
+        </table>
+    </div>
+    <div class="instructions">
+        <h2>Instructions</h2>
+        <ul>
+            <li>Avoid excess salt</li>
+            <li>Use natural sugar in fruits</li>
+            <li>Avoid all types of tea/coffee rather order fruits from Swiggy Instamart</li>
+            <li>Avoid outside food completely</li>
+            <li>Multigrain bread from The Health Factory is suitable</li>
+            <li>Egg from Eggoz only</li>
+            <li>Avoid heavy oil food items</li>
+            <li>Avoid dairy products and travel of all types</li>
+            <li>If travelling, keep cherry, pineapple slices or watermelon, etc.</li>
+        </ul>
+    </div>
+</body>
+</html>
