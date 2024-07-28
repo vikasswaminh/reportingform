@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCNSE Course Syllabus</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 20px;
+        }
+        .module {
+            margin-bottom: 20px;
+        }
+        .module h2 {
+            cursor: pointer;
+            background-color: #f97316;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .module h2:hover {
+            background-color: #ea580c;
+        }
+        .content {
+            display: none;
+            border: 1px solid #ddd;
+            border-top: none;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            background-color: #f1f5f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #93c5fd;
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+
+<h1 class="text-3xl font-bold text-center text-gray-800 mb-8">PCNSE Course Syllabus</h1>
+
+<div class="module">
+    <h2 onclick="toggleContent('module1')">Module 1: Core Concepts</h2>
+    <div id="module1" class="content">
+        <table class="min-w-full bg-white">
+            <tr>
+                <th>Topic</th>
+                <th>Subtopics</th>
+            </tr>
+            <tr>
+                <td>Identify how Palo Alto Networks products work together to improve PAN-OS services</td>
+                <td>Security components, Firewall components, Panorama components, PAN-OS subscriptions, Plugin components, Heatmap and BPA reports, AIOps/Telemetry, IPv6, IoT</td>
+            </tr>
+            <tr>
+                <td>Determine and assess appropriate interfaces or zone types for various environments</td>
+                <td>Layer 2 interfaces, Layer 3 interfaces, Virtual wire interfaces, Tap interfaces, Subinterfaces, Tunnel interfaces, Aggregate interfaces, Loopback interfaces, Decrypt mirror interfaces, VLAN interfaces</td>
+            </tr>
+            <tr>
+                <td>Identify decryption deployment strategies</td>
+                <td>Risks and implications of enabling decryption, Use cases, Decryption types, Decryption profiles and certificates, Create a decryption policy in the firewall, Configure SSH Proxy</td>
+            </tr>
+            <tr>
+                <td>Enforce User-ID</td>
+                <td>Methods of building user-to-IP mappings, Determine if User-ID agent or agentless should be used, Compare and contrast User-ID agents, Methods of User-ID redistribution, Methods of group mapping, Server profile and authentication profile</td>
+            </tr>
+            <tr>
+                <td>Determine how and when to use the Authentication policy</td>
+                <td>Purpose of, and use case for, the Authentication policy, Dependencies, Captive portal versus GlobalProtect (GP) client</td>
+            </tr>
+            <tr>
+                <td>Differentiate between the fundamental functions that reside on the management plane and data plane</td>
+                <td>Fundamental functions of management and data plane</td>
+            </tr>
+            <tr>
+                <td>Define multiple virtual systems (multi-vsys) environment</td>
+                <td>User-ID hub, Inter-vsys routing, Service routes</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="module">
+    <h2 onclick="toggleContent('module2')">Module 2: Deploy and Configure Core Components</h2>
+    <div id="module2" class="content">
+        <table class="min-w-full bg-white">
+            <tr>
+                <th>Topic</th>
+                <th>Subtopics</th>
+            </tr>
+            <tr>
+                <td>Configure Management Profiles</td>
+                <td>Interface Management Profile, SSL/TLS profile</td>
+            </tr>
+            <tr>
+                <td>Deploy and configure Security Profiles</td>
+                <td>Custom configuration of different Security Profiles and Security Profile Groups, Relationship between URL filtering and credential theft prevention, Use of username and domain name in HTTP header insertion, DNS Security, How to tune or add exceptions to a Security Profile, Compare and contrast threat prevention and advanced threat prevention, Compare and contrast URL Filtering and Advanced URL Filtering</td>
+            </tr>
+            <tr>
+                <td>Configure zone protections, packet buffer protection, and DoS protection</td>
+                <td>Customized values versus default settings, Classified versus aggregate profile values, Layer 3 and Layer 4 header inspection</td>
+            </tr>
+            <tr>
+                <td>Design the deployment configuration of a Palo Alto Networks firewall</td>
+                <td>Advanced high availability (HA) deployments, HA Pair, Zero-Touch Provisioning, Bootstrapping</td>
+            </tr>
+            <tr>
+                <td>Configure authorization, authentication, and device access</td>
+                <td>Role-based access control for authorization, Different methods used to authenticate, The Authentication Sequence, The device access method</td>
+            </tr>
+            <tr>
+                <td>Configure and manage certificates</td>
+                <td>Usage, Profiles, Chains</td>
+            </tr>
+            <tr>
+                <td>Configure routing</td>
+                <td>Dynamic routing, Redistribution Profiles, Static routes, Route monitoring, Policy-based forwarding, Virtual routers versus logical routers</td>
+            </tr>
+            <tr>
+                <td>Configure NAT</td>
+                <td>NAT policy rules, Security rules, Source NAT, No-NAT Policies, Use session browser to find NAT rule name, U-Turn NAT, Check HIT counts</td>
+            </tr>
+            <tr>
+                <td>Configure site-to-site tunnels</td>
+                <td>IPsec components, Static peers and dynamic peers for IPsec, IPsec tunnel Monitor Profiles, IPsec tunnel testing, Generic Routing Encapsulation, One-to-one and one-to-many tunnels, Determine when to use proxy IDs</td>
+            </tr>
+            <tr>
+                <td>Configure service routes</td>
+                <td>Default, Custom, Destination, Custom routes for different virtual systems versus destination routes, How to verify service routes</td>
+            </tr>
+            <tr>
+                <td>Configure application-based QoS</td>
+                <td>Enablement requirements, QoS policy rule, Add a Differentiated Services Code Point/ToS component, QoS Profile, Determine how to control bandwidth use on a per-application basis, Use QoS to monitor bandwidth utilization</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="module">
+    <h2 onclick="toggleContent('module3')">Module 3: Deploy and Configure Features and Subscriptions</h2>
+    <div id="module3" class="content">
+        <table class="min-w-full bg-white">
+            <tr>
+                <th>Topic</th>
+                <th>Subtopics</th>
+            </tr>
+            <tr>
+                <td>Configure App-ID</td>
+                <td>Create security rules with App-ID, Convert port and protocol rules to App-ID rules, Identify the impact of application override to overall firewall functionality, Create custom apps and threats, Review App-ID dependencies</td>
+            </tr>
+            <tr>
+                <td>Configure GlobalProtect</td>
+                <td>GlobalProtect licensing, Configure the gateway and the portal, GlobalProtect agent, Differentiate between logon methods, Configure clientless VPN, HIP, Configure multiple gateway agent profiles, Split tunneling</td>
+            </tr>
+            <tr>
+                <td>Configure decryption</td>
+                <td>Inbound decryption, SSL forward proxy, SSL decryption exclusions, SSH proxy</td>
+            </tr>
+            <tr>
+                <td>Configure User-ID</td>
+                <td>User-ID agent and agentless, User-ID group mapping, Shared User-ID mapping across virtual systems, Data redistribution, User-ID methods, Benefits of using dynamic user groups (DUGs) in policy rules, Requirements to support dynamic user groups, How GlobalProtect internal and external gateways can be used</td>
+            </tr>
+            <tr>
+                <td>Configure WildFire</td>
+                <td>Submission profile, Action profile, Submissions and verdicts, Signature actions, File types and file sizes, Update schedule, Forwarding of decrypted traffic</td>
+            </tr>
+            <tr>
+                <td>Configure Web Proxy</td>
+                <td>Transparent proxy, Explicit proxy</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="module">
+    <h2 onclick="toggleContent('module4')">Module 4: Deploy and Configure Firewalls Using Panorama</h2>
+    <div id="module4" class="content">
+        <table class="min-w-full bg-white">
+            <tr>
+                <th>Topic</th>
+                <th>Subtopics</th>
+            </tr>
+            <tr>
+                <td>Configure templates and template stacks</td>
+                <td>Components configured in a template, How the order of templates in a stack affects the configuration push to a firewall, Overriding a template value in a stack, Configure variables in templates, Relationship between Panorama and devices for dynamic update versions, policy implementation, and HA peers</td>
+            </tr>
+            <tr>
+                <td>Configure device groups</td>
+                <td>Device group hierarchies, Identify what device groups contain, Differentiate between different use cases for pre-rules, local rules, default rules, and post-rules, Identify the impact of configuring a primary device, Assign firewalls to device groups</td>
+            </tr>
+            <tr>
+                <td>Manage firewall configurations within Panorama</td>
+                <td>Licensing, Commit recovery feature, Automatic commit recovery, Commit types and schedules, Configuration backups, Commit type options, Manage dynamic updates for Panorama and Panorama-managed devices, Software and dynamic updates, Import firewall configurations into Panorama, Configure Log Collectors, Check firewall health and status from Panorama, Configure role-based access control on Panorama</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="module">
+    <h2 onclick="toggleContent('module5')">Module 5: Manage and Operate</h2>
+    <div id="module5" class="content">
+        <table class="min-w-full bg-white">
+            <tr>
+                <th>Topic</th>
+                <th>Subtopics</th>
+            </tr>
+            <tr>
+                <td>Manage and configure log forwarding</td>
+                <td>Identify log types and criticalities, Manage external services, Create and manage tags, Log monitoring, Customize logging and reporting settings</td>
+            </tr>
+            <tr>
+                <td>Plan and execute the process to upgrade a Palo Alto Networks system</td>
+                <td>Single firewall, High availability pairs, Panorama push, Dynamic updates</td>
+            </tr>
+            <tr>
+                <td>Manage HA functions</td>
+                <td>Link monitoring, Path monitoring, HA links, Failover, Active/active and active/passive, HA interfaces, Clustering, Election setting</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="module">
+    <h2 onclick="toggleContent('module6')">Module 6: Troubleshooting</h2>
+    <div id="module6" class="content">
+        <table class="min-w-full bg-white">
+            <tr>
+                <th>Topic</th>
+                <th>Subtopics</th>
+            </tr>
+            <tr>
+                <td>Troubleshoot site-to-site tunnels</td>
+                <td>IPSec, GRE, One-to-one and one-to-many tunnels, Phase 1 issues, Route-based versus policy-based remote hosts, Tunnel monitoring</td>
+            </tr>
+            <tr>
+                <td>Troubleshoot interfaces</td>
+                <td>Transceivers, Settings, Aggregate interfaces, LACP, Counters, Tagging</td>
+            </tr>
+            <tr>
+                <td>Troubleshoot Decryption</td>
+                <td>Inbound decryption, SSL forward proxy, SSH proxy, Identify what cannot be decrypted and configure exclusions and bypasses, Certificates</td>
+            </tr>
+            <tr>
+                <td>Troubleshoot routing</td>
+                <td>Dynamic routing, Redistribution profiles, Static routes, Route monitoring, Policy-based forwarding, Multicast routing, Service routes</td>
+            </tr>
+            <tr>
+                <td>General Troubleshooting</td>
+                <td>Logs, Packet capture (pcap), Reports</td>
+            </tr>
+            <tr>
+                <td>Troubleshoot resource protections</td>
+                <td>Zone Protection profiles, DoS protections, Packet buffer protections</td>
+            </tr>
+            <tr>
+                <td>Troubleshoot GlobalProtect</td>
+                <td>Portal and Gateway, Access to resources, GlobalProtect client</td>
+            </tr>
+            <tr>
+                <td>Troubleshoot policies</td>
+                <td>NAT, Security, Decryption, Authentication</td>
+            </tr>
+            <tr>
+                <td>Troubleshoot HA functions</td>
+                <td>Monitor, Failover triggers</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
