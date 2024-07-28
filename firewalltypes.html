@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCNSE Webinar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Title Section -->
+    <header class="bg-blue-600 text-white p-8">
+        <h1 class="text-4xl font-bold">Introduction to Palo Alto Networks PCNSE</h1>
+        <p class="text-lg mt-2">Core Concepts and Configuration of Core Components</p>
+        <p class="text-lg mt-2">Date and Presenter Name</p>
+    </header>
+
+    <!-- Agenda Section -->
+    <section class="p-8">
+        <h2 class="text-3xl font-bold mb-4">Agenda</h2>
+        <ul class="list-disc ml-8">
+            <li>Overview of Palo Alto Networks Products</li>
+            <li>Core Concepts
+                <ul class="list-disc ml-8">
+                    <li>Security Components</li>
+                    <li>Firewall Components</li>
+                    <li>Panorama Components</li>
+                    <li>PAN-OS Subscriptions</li>
+                    <li>Plugin Components</li>
+                    <li>Heatmap and BPA Reports</li>
+                    <li>AIOps/Telemetry</li>
+                </ul>
+            </li>
+            <li>Deploy and Configure Core Components
+                <ul class="list-disc ml-8">
+                    <li>Management Profiles</li>
+                    <li>Security Profiles</li>
+                    <li>Zone Protections</li>
+                    <li>High Availability</li>
+                    <li>Authorization, Authentication, and Device Access</li>
+                    <li>Certificates Management</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Overview of Palo Alto Networks Products -->
+    <section class="p-8 bg-white shadow-lg">
+        <h2 class="text-3xl font-bold mb-4">Overview of Palo Alto Networks Products</h2>
+        <h3 class="text-2xl font-semibold mt-4">Strata: Enterprise Security</h3>
+        <ul class="list-disc ml-8 mt-2">
+            <li><strong>Next-Generation Firewalls (NGFWs):</strong>
+                <ul class="list-disc ml-8">
+                    <li><strong>PA-Series:</strong> Hardware-based firewalls for various environments, from small offices to large data centers.</li>
+                    <li><strong>VM-Series:</strong> Virtual firewalls optimized for private and public cloud environments.</li>
+                    <li><strong>CN-Series:</strong> Container firewalls for protecting containerized applications and Kubernetes environments.</li>
+                    <li><strong>K2-Series:</strong> Firewalls designed for industrial and SCADA environments.</li>
+                </ul>
+            </li>
+            <li><strong>Panorama:</strong> Centralized management platform for consolidated policy creation and device management for NGFWs.</li>
+            <li><strong>Threat Intelligence and Analysis:</strong>
+                <ul class="list-disc ml-8">
+                    <li><strong>WildFire:</strong> Cloud-based threat analysis service for zero-day threat mitigation.</li>
+                    <li><strong>Advanced Threat Prevention:</strong> Subscription service for blocking exploits, malware, and command-and-control traffic.</li>
+                </ul>
+            </li>
+            <li><strong>GlobalProtect:</strong> Network security for endpoints providing secure VPN access for remote users.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold mt-4">Prisma: Cloud Security</h3>
+        <ul class="list-disc ml-8 mt-2">
+            <li><strong>Prisma Access:</strong> Cloud-delivered security platform for extending consistent security policies to remote users and branch offices.</li>
+            <li><strong>Prisma Cloud:</strong> Comprehensive cloud-native security platform for visibility, compliance, and protection across the cloud environment.
+                <ul class="list-disc ml-8">
+                    <li><strong>Compute Security:</strong> Protects workloads in containers, serverless functions, and VMs.</li>
+                    <li><strong>Network Security:</strong> Secures cloud networks with microsegmentation and threat prevention.</li>
+                    <li><strong>Identity and Access Security:</strong> Manages and secures user access to cloud resources.</li>
+                    <li><strong>Compliance and Governance:</strong> Ensures continuous compliance with industry standards.</li>
+                </ul>
+            </li>
+            <li><strong>Prisma SaaS:</strong> Security for SaaS applications providing visibility and control over SaaS usage, protecting data and preventing threats.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold mt-4">Cortex: Security Operations</h3>
+        <ul class="list-disc ml-8 mt-2">
+            <li><strong>Cortex XDR:</strong> Extended detection and response platform integrating data from network, endpoints, and cloud for comprehensive threat detection and response.</li>
+            <li><strong>Cortex Data Lake:</strong> Scalable and secure cloud-based data storage for integrating and normalizing data from Palo Alto Networks security products.</li>
+            <li><strong>Cortex XSOAR:</strong> Security orchestration, automation, and response platform for automating incident response workflows.</
