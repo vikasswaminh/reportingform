@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced DevOps Course</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .superwide-container {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    @media (min-width: 1024px) {
+      .dropdown-menu {
+        display: none;
+      }
+    }
+    .faq-question {
+      cursor: pointer;
+    }
+    .faq-answer {
+      display: none;
+    }
+    .faq-question.active + .faq-answer {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white p-4 flex justify-between items-center w-full shadow-md">
+    <div class="text-2xl font-bold text-gray-900">DesignPro</div>
+    <div class="lg:hidden">
+      <button id="menu-btn" class="text-gray-900 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <ul id="menu" class="hidden lg:flex space-x-4">
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">Home</a></li>
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">Services</a></li>
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">Portfolio</a></li>
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">About</a></li>
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Course Table Section -->
+  <section class="p-8 superwide-container">
+    <h2 class="text-4xl font-bold text-center mb-8">Advanced DevOps Course: Git, GitHub, Docker, and Kubernetes</h2>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white shadow-md rounded-lg">
+        <thead class="bg-gray-800 text-white">
+          <tr>
+            <th class="py-2 px-4 text-left">Day</th>
+            <th class="py-2 px-4 text-left">Topic</th>
+            <th class="py-2 px-4 text-left">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 1</td>
+            <td class="py-2 px-4">Introduction to Git</td>
+            <td class="py-2 px-4">Overview, Installation, Basic Commands</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 1</td>
+            <td class="py-2 px-4">Git Branching and Merging</td>
+            <td class="py-2 px-4">Creating Branches, Merging Branches, Resolving Conflicts</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 1</td>
+            <td class="py-2 px-4">Git Advanced Topics</td>
+            <td class="py-2 px-4">Stashing, Reflog, Resetting, Rebasing</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 2</td>
+            <td class="py-2 px-4">Introduction to GitHub</td>
+            <td class="py-2 px-4">Setting Up a GitHub Account, Creating Repositories, GitHub Flow</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 2</td>
+            <td class="py-2 px-4">Collaborating on GitHub</td>
+            <td class="py-2 px-4">Pull Requests, Issues, Project Management</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 2</td>
+            <td class="py-2 px-4">CI/CD with GitHub Actions</td>
+            <td class="py-2 px-4">Introduction to GitHub Actions, Creating Workflows, Continuous Integration</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 3</td>
+            <td class="py-2 px-4">Introduction to Docker</td>
+            <td class="py-2 px-4">Overview, Installation, Docker Architecture</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 3</td>
+            <td class="py-2 px-4">Docker Commands and Usage</td>
+            <td class="py-2 px-4">Building Images, Running Containers, Managing Containers</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 3</td>
+            <td class="py-2 px-4">Docker Networking and Volumes</td>
+            <td class="py-2 px-4">Networking in Docker, Data Management with Volumes</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 4</td>
+            <td class="py-2 px-4">Docker Compose</td>
+            <td class="py-2 px-4">Overview, Defining Services, Running Multi-Container Applications</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 4</td>
+            <td class="py-2 px-4">Docker Swarm</td>
+            <td class="py-2 px-4">Introduction to Docker Swarm, Creating a Swarm, Deploying Services</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 4</td>
+            <td class="py-2 px-4">Practical Lab</td>
+            <td class="py-2 px-4">Building and Deploying Applications with Docker and Docker Compose</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 5</td>
+            <td class="py-2 px-4">Introduction to Kubernetes</td>
+            <td class="py-2 px-4">Overview, Kubernetes Architecture, Installing Kubernetes</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 5</td>
+            <td class="py-2 px-4">Kubernetes Concepts</td>
+            <td class="py-2 px-4">Pods, Services, Deployments, StatefulSets</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 5</td>
+            <td class="py-2 px-4">Managing Kubernetes</td>
+            <td class="py-2 px-4">Using kubectl, Scaling Applications, Upgrading Applications</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 5</td>
+            <td class="py-2 px-4">Final Project</td>
+            <td class="py-2 px-4">Deploying a Multi-Tier Application on Kubernetes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        question.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
