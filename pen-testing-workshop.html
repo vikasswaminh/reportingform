@@ -1,0 +1,190 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Penetration Testing Course</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .superwide-container {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    @media (min-width: 1024px) {
+      .dropdown-menu {
+        display: none;
+      }
+    }
+    .faq-question {
+      cursor: pointer;
+    }
+    .faq-answer {
+      display: none;
+    }
+    .faq-question.active + .faq-answer {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white p-4 flex justify-between items-center w-full shadow-md">
+    <div class="text-2xl font-bold text-gray-900">DesignPro</div>
+    <div class="lg:hidden">
+      <button id="menu-btn" class="text-gray-900 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <ul id="menu" class="hidden lg:flex space-x-4">
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">Home</a></li>
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">Services</a></li>
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">Portfolio</a></li>
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">About</a></li>
+      <li><a href="#" class="hover:text-blue-500 text-gray-900">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Course Table Section -->
+  <section class="p-8 superwide-container">
+    <h2 class="text-4xl font-bold text-center mb-8">Advanced Penetration Testing: A Practical Approach for Professionals</h2>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white shadow-md rounded-lg">
+        <thead class="bg-gray-800 text-white">
+          <tr>
+            <th class="py-2 px-4 text-left">Day</th>
+            <th class="py-2 px-4 text-left">Topic</th>
+            <th class="py-2 px-4 text-left">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 1</td>
+            <td class="py-2 px-4">Introduction to Penetration Testing</td>
+            <td class="py-2 px-4">Overview, Types (Blackbox, Whitebox, Greybox), Legal and Ethical Considerations</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 1</td>
+            <td class="py-2 px-4">Setting Up the Environment</td>
+            <td class="py-2 px-4">Setting Up Kali Linux, Basic Command Line Skills</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 1</td>
+            <td class="py-2 px-4">Reconnaissance Techniques</td>
+            <td class="py-2 px-4">Passive and Active Reconnaissance, Tools: Nmap, Rustscan, Dig</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 1</td>
+            <td class="py-2 px-4">Practical Lab</td>
+            <td class="py-2 px-4">Scanning and Mapping Networks with Nmap and Rustscan</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 2</td>
+            <td class="py-2 px-4">Vulnerability Scanning</td>
+            <td class="py-2 px-4">Introduction to Nessus and OpenVAS, Running Vulnerability Scans</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 2</td>
+            <td class="py-2 px-4">Exploitation Techniques</td>
+            <td class="py-2 px-4">Exploit Development, Tools: Metasploit Framework, SQLmap</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 2</td>
+            <td class="py-2 px-4">Practical Lab</td>
+            <td class="py-2 px-4">Exploiting Vulnerabilities with Metasploit and SQLmap</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 2</td>
+            <td class="py-2 px-4">Case Studies</td>
+            <td class="py-2 px-4">Analysis of Real-World Exploits</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 3</td>
+            <td class="py-2 px-4">OWASP Top 10</td>
+            <td class="py-2 px-4">Overview of OWASP Top 10 Vulnerabilities, Common Web Application Attacks</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 3</td>
+            <td class="py-2 px-4">Web Application Testing Tools</td>
+            <td class="py-2 px-4">Tools: Burp Suite, ZAP Proxy, XSSer</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 3</td>
+            <td class="py-2 px-4">Practical Lab</td>
+            <td class="py-2 px-4">Identifying and Exploiting Web Application Vulnerabilities</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 3</td>
+            <td class="py-2 px-4">Hands-On Exercise</td>
+            <td class="py-2 px-4">Conducting a Web Application Penetration Test</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 4</td>
+            <td class="py-2 px-4">Post-Exploitation Techniques</td>
+            <td class="py-2 px-4">Privilege Escalation, Maintaining Access, Tools: John the Ripper, Hashcat, Mimikatz</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 4</td>
+            <td class="py-2 px-4">Network Security Testing</td>
+            <td class="py-2 px-4">Network Vulnerability Assessment, Tools: Crackmapexec, Impacket, Responder</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 4</td>
+            <td class="py-2 px-4">Practical Lab</td>
+            <td class="py-2 px-4">Network Attacks and Post-Exploitation Activities</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 4</td>
+            <td class="py-2 px-4">Case Studies</td>
+            <td class="py-2 px-4">Analysis of Successful Network Exploits</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 5</td>
+            <td class="py-2 px-4">Reporting and Documentation</td>
+            <td class="py-2 px-4">Writing Effective Penetration Testing Reports, Communicating Findings to Stakeholders</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 5</td>
+            <td class="py-2 px-4">Remediation Strategies</td>
+            <td class="py-2 px-4">Providing Practical Recommendations, Follow-Up Assessments</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 5</td>
+            <td class="py-2 px-4">Advanced Topics</td>
+            <td class="py-2 px-4">Advanced Persistent Threats (APT), Red Teaming vs. Blue Teaming, Tools: Advanced Metasploit Techniques, Cobalt Strike</td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-2 px-4">Day 5</td>
+            <td class="py-2 px-4">Final Project</td>
+            <td class="py-2 px-4">Conducting a Comprehensive Penetration Test on a Simulated Environment, Creating and Presenting a Penetration Testing Report</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        question.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
